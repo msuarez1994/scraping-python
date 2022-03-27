@@ -1,16 +1,22 @@
 from modules.openWebinars import OpenWebinar
 from modules.platzi import Platzi
 from modules.styde import Styde
+from modules.codigofacilito import CodigoFacilito
 
 # obj = OpenWebinar('crear-plugins-para-wordpress')
 # print(obj.getTitle())
 # print(obj.getCapitulos())
 
 
-p = Platzi('react-practico')
-print(p.getTitle())
-print(p.getCapitulos())
+# p = Platzi('react-practico')
+# print(p.getTitle())
+# print(p.getCapitulos())
 
 # styde = Styde('tecnicas-de-autorizacion-con-laravel')
 # print(styde.getTitle())
 # print(styde.getCapitulos())
+
+lista = CodigoFacilito('rails-profesional')
+print(lista.getTitle())
+# print(lista.secciones())
+print(lista.getCapitulos())
