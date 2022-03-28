@@ -12,4 +12,5 @@ class Styde(Curso):
         quotes_html = self.header().find_all('ul', class_="lesson-list")
         for video in quotes_html:
             for lista in video.find_all('li'):
-                print(lista.text.strip())
+                super().lista.append(lista.text.strip())
+        return super().lista

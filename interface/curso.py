@@ -1,9 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-
-
 class Curso:
     url = ''
+    lista = []
     def __init__(self, partial):
         self.partial = partial
     

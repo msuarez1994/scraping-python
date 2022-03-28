@@ -3,20 +3,22 @@ from modules.platzi import Platzi
 from modules.styde import Styde
 from modules.codigofacilito import CodigoFacilito
 
-# obj = OpenWebinar('crear-plugins-para-wordpress')
+# obj = OpenWebinar('javascript-avanzado')
 # print(obj.getTitle())
-# print(obj.getCapitulos())
+# for caps in obj.getCapitulos():
+#     print(caps)
 
-
-# p = Platzi('react-practico')
-# print(p.getTitle())
-# print(p.getCapitulos())
+# platzi = Platzi('react-practico')
+# print(platzi.getTitle())
+# for caps in platzi.getCapitulos():
+#     print(caps)
 
 # styde = Styde('tecnicas-de-autorizacion-con-laravel')
 # print(styde.getTitle())
-# print(styde.getCapitulos())
+# for caps in styde.getCapitulos():
+#     print(caps)
 
-lista = CodigoFacilito('rails-profesional')
-print(lista.getTitle())
-# print(lista.secciones())
-print(lista.getCapitulos())
+codfacilito = CodigoFacilito('rails-profesional')
+print(codfacilito.getTitle())
+for caps in codfacilito.getCapitulos():
+    print(caps)

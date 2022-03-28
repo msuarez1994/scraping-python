@@ -1,7 +1,7 @@
 from interface.curso import Curso
 
 def ceros(valor):
-        return f"{valor:02d}"
+    return f"{valor:02d}"
 
 class CodigoFacilito(Curso):
     url = "https://codigofacilito.com/cursos/"
@@ -14,9 +14,11 @@ class CodigoFacilito(Curso):
     def getCapitulos(self):
         quotes_html = self.header().find_all('li', class_="f-grey-text green-alpha-hover topic-item")
         for cons, video in enumerate(quotes_html):
-            print(ceros(cons+1),'-',video.get_text().strip(), end="\n")
+            super().lista.append(ceros(cons+1)+' - '+video.get_text().strip())
+        return super().lista
 
     def secciones(self):
         seccions = self.header().find_all('div', class_="right-space col-xs no-padding")
         for sec in seccions:    
-            print(sec.text.strip(), end="\n")
+            super().lista.append(sec.text.strip())
+        return super().lista
