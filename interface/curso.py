@@ -10,7 +10,7 @@ class Curso:
         return self.url + self.partial
 
     def header(self):
-        response = requests.get(self.getUrl())
+        response = requests.get(self.getUrl(), headers={'User-Agent': 'Mozilla/5.0'})
         html = BeautifulSoup(response.text, 'html.parser')
         return html
     

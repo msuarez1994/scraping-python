@@ -1,7 +1,10 @@
+from sys import modules
 from modules.openWebinars import OpenWebinar
 from modules.platzi import Platzi
 from modules.styde import Styde
 from modules.codigofacilito import CodigoFacilito
+from modules.edTeam import edTeam
+from modules.cursosDesarrolloWeb import cursosDesWeb
 
 # obj = OpenWebinar('javascript-avanzado')
 # print(obj.getTitle())
@@ -18,7 +21,19 @@ from modules.codigofacilito import CodigoFacilito
 # for caps in styde.getCapitulos():
 #     print(caps)
 
-codfacilito = CodigoFacilito('rails-profesional')
-print(codfacilito.getTitle())
-for caps in codfacilito.getCapitulos():
+# codfacilito = CodigoFacilito('rails-profesional')
+# print(codfacilito.getTitle())
+# for caps in codfacilito.getCapitulos():
+#     print(caps)
+
+# edteam = edTeam('javascript')
+# print(edteam.getUrl())
+# print(edteam.getTitle())
+# for caps in edteam.getCapitulos():
+#     print(caps)
+
+desWeb = cursosDesWeb('desarrollar-formulario-con-subida-de-archivos-laravel-livewire')
+print(desWeb.getTitle())
+
+for caps in desWeb.getCapitulos():
     print(caps)
