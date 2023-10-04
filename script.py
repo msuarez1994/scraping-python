@@ -16,10 +16,10 @@ from modules.cursosDesarrolloWeb import cursosDesWeb
 # for caps in platzi.getCapitulos():
 #     print(caps)
 
-# styde = Styde('tecnicas-de-autorizacion-con-laravel')
-# print(styde.getTitle())
-# for caps in styde.getCapitulos():
-#     print(caps)
+styde = Styde('manejo-de-colecciones-en-laravel')
+print(styde.getTitle())
+for caps in styde.getCapitulos():
+    print(caps)
 
 # codfacilito = CodigoFacilito('rails-profesional')
 # print(codfacilito.getTitle())
@@ -32,8 +32,8 @@ from modules.cursosDesarrolloWeb import cursosDesWeb
 # for caps in edteam.getCapitulos():
 #     print(caps)
 
-desWeb = cursosDesWeb('desarrollar-formulario-con-subida-de-archivos-laravel-livewire')
-print(desWeb.getTitle())
+# desWeb = cursosDesWeb('desarrollar-formulario-con-subida-de-archivos-laravel-livewire')
+# print(desWeb.getTitle())
 
-for caps in desWeb.getCapitulos():
-    print(caps)
+# for caps in desWeb.getCapitulos():
+#     print(caps)

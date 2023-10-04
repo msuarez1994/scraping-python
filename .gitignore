@@ -9,3 +9,4 @@ interface/__pycache__/
 modules/__pycache__/
 cursos.txt
 .env
+venv/
